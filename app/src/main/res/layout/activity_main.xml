@@ -39,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:gravity="center_horizontal"
+        android:textSize="15sp"
         android:text="Não sabe quanto vai gastar com combustível na viagem? Aqui você sabe."
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_texto1" />
