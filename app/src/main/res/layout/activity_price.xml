@@ -10,7 +10,7 @@
     tools:context=".PriceActivity">
 
     <Button
-        android:id="@+id/btn_price"
+        android:id="@+id/btn_preço"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edt_price"
+        android:id="@+id/edt_preço"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:text="Passo 1 de 3"
         android:textColor="#FF0000"
-        app:layout_constraintBottom_toTopOf="@+id/edt_price"
+        app:layout_constraintBottom_toTopOf="@+id/edt_preço"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
