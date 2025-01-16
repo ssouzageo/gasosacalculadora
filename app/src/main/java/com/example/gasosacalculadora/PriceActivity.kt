@@ -27,13 +27,19 @@ class PriceActivity : AppCompatActivity() {
             val preçoStr: String = edtPreço.text.toString()
 
             if (preçoStr == "") {
+                    Snackbar
+                        .make(
+                            edtPreço,
+                            "Preencha todos os campos.",
+                            Snackbar.LENGTH_LONG
+                        )
+                        .show()
+                } else {
+                    val preço = preçoStr.toFloat()
+                }
 
-            } else {
-                val preço = edtPreço.text.toString().toFloat()
+                println("Geo ação de botão " + price)
             }
 
-            println("Geo ação de botão " + price)
         }
-
     }
-}
