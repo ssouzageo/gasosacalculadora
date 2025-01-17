@@ -8,23 +8,22 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
-import com.google.android.material.textfield.TextInputLayout
 
-const val KEY_PREÇO_GC = "PreçoActivity.Key_GC"
+const val KEY_CONSUMO_GC = "ConsumoActivity.Key_GC"
 
-class PriceActivity : AppCompatActivity() {
+class ConsumoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_price)
+        setContentView(R.layout.activity_consumo)
 
         val preço = intent.getFloatExtra(KEY_PREÇO_GC, 0f)
 
-        val edtpreço = findViewById<TextInputEditText>(R.id.edt_preço)
-        val buttonPreço = findViewById<Button>(R.id.btn_preço)
+        val edtconsumo = findViewById<TextInputEditText>(R.id.edt_consumo)
+        val buttonConsumo = findViewById<Button>(R.id.btn_consumo)
 
-        buttonPreço.setOnClickListener {
-            if (edtpreço.text.toString() == "" ) {
+        buttonConsumo.setOnClickListener {
+            if (edtconsumo.text.toString() == "" ) {
                 Snackbar
                     .make(
                         it,
@@ -33,13 +32,14 @@ class PriceActivity : AppCompatActivity() {
                     )
                     .show()
             } else {
-                val price = edtpreço.text.toString().toFloatOrNull() ?: 0.0
+                val consumo = edtconsumo.text.toString().toFloatOrNull() ?: 0.0
 
-
-                intent.putExtra(KEY_PREÇO_GC, price)
+                intent.putExtra(KEY_CONSUMO_GC, consumo)
+                intent.putExtra("PreçoActivity.Key_GC", preço)
                 startActivity(intent)
             }
         }
     }
 
-            }
+}
+
