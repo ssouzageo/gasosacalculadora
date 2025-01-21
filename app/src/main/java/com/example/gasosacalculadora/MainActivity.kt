@@ -14,9 +14,6 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        // 1. Passar para a próxima tela; e
-        // 2. intent.putExtras na Main (consertar senha).
-
         val btniniciar = findViewById<Button>(R.id.btn_iniciar)
 
         btniniciar.setOnClickListener {

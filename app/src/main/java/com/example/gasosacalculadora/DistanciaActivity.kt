@@ -9,21 +9,21 @@ import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 
-const val KEY_CONSUMO_GC = "ConsumoActivity.Key_GC"
+const val KEY_DISTANCIA_GC = "KeyActivity.key_GC"
 
-class ConsumoActivity : AppCompatActivity() {
+class DistanciaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_consumo)
+        setContentView(R.layout.activity_distancia)
 
-        val price = intent.getFloatExtra(KEY_PRICE_GC, 0f)
+        val consumo = intent.getFloatExtra(KEY_CONSUMO_GC, 0f)
 
-        val edtconsumo = findViewById<TextInputEditText>(R.id.edt_consumo)
-        val buttonConsumo = findViewById<Button>(R.id.btn_consumo)
+        val buttonDistancia = findViewById<Button>(R.id.btn_distancia)
+        val edtdistancia = findViewById<TextInputEditText>(R.id.edt_distancia)
 
-        buttonConsumo.setOnClickListener {
-            if (edtconsumo.text.toString() == "" ) {
+        buttonDistancia.setOnClickListener {
+            if (edtdistancia.text.toString() == "") {
                 Snackbar
                     .make(
                         it,
@@ -32,14 +32,16 @@ class ConsumoActivity : AppCompatActivity() {
                     )
                     .show()
             } else {
-                val consumo = edtconsumo.text.toString().toFloatOrNull() ?: 0.0
+                val distancia = edtdistancia.text.toString().toFloatOrNull() ?: 0.0
 
-                intent.putExtra(KEY_CONSUMO_GC, consumo)
+                intent.putExtra(KEY_DISTANCIA_GC, distancia)
                 intent.putExtra("PriceActivity.Key_GC", price)
+                intent.putExtra("ConsumoActivity.Key_GC", consumo)
                 startActivity(intent)
+
             }
+
         }
+
     }
-
 }
-

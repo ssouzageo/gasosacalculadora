@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#87CEEB"
+    android:background="#00A86B"
     tools:context=".MainActivity">
 
     <Button
@@ -19,14 +19,14 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tv_texto1"
+        android:id="@+id/tv_título"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:gravity="center_horizontal"
         android:textSize="32dp"
         android:textStyle="bold"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:text="Calculadora para Gastos de Combustível"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -34,13 +34,14 @@
         tools:layout_editor_absoluteY="360dp" />
 
     <TextView
-        android:id="@+id/tv_texto2"
+        android:id="@+id/tv_subtítulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:gravity="center_horizontal"
         android:textSize="15sp"
+        android:textColor="#FFFFF0"
         android:text="Não sabe quanto vai gastar com combustível na viagem? Aqui você sabe."
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_texto1" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_título" />
 </androidx.constraintlayout.widget.ConstraintLayout>
