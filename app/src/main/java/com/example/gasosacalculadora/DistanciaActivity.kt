@@ -18,6 +18,7 @@ class DistanciaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_distancia)
 
         val consumo = intent.getFloatExtra(KEY_CONSUMO_GC, 0f)
+        val price = intent.getFloatExtra(KEY_PRICE_GC, 0f)
 
         val buttonDistancia = findViewById<Button>(R.id.btn_distancia)
         val edtdistancia = findViewById<TextInputEditText>(R.id.edt_distancia)
