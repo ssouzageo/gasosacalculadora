@@ -24,6 +24,7 @@ class DistanciaActivity : AppCompatActivity() {
         val edtdistancia = findViewById<TextInputEditText>(R.id.edt_distancia)
 
         buttonDistancia.setOnClickListener {
+
             if (edtdistancia.text.toString() == "") {
                 Snackbar
                     .make(
@@ -33,12 +34,15 @@ class DistanciaActivity : AppCompatActivity() {
                     )
                     .show()
             } else {
+
                 val distancia = edtdistancia.text.toString().toFloatOrNull() ?: 0.0
 
                 intent.putExtra(KEY_DISTANCIA_GC, distancia)
                 intent.putExtra("PriceActivity.Key_GC", price)
                 intent.putExtra("ConsumoActivity.Key_GC", consumo)
                 startActivity(intent)
+
+
 
             }
 

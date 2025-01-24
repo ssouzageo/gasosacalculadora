@@ -13,9 +13,19 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:orientation="vertical"
+        android:gravity="center_horizontal"
         android:background="@drawable/bg_tela1"
         app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="@color/white" />
+        android:backgroundTint="@color/white" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp"
+            android:src="@drawable/bombagasosa"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn_iniciar"

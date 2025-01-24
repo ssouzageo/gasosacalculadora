@@ -16,7 +16,16 @@
         android:background="@drawable/bg_tela2"
         android:backgroundTint="@color/white"
         android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp"
+            android:src="@drawable/price"
+            tools:srcCompat="@tools:sample/avatars" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn_price"
