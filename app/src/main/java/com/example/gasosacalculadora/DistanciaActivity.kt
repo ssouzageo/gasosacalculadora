@@ -25,6 +25,8 @@ class DistanciaActivity : AppCompatActivity() {
 
         buttonDistancia.setOnClickListener {
 
+            val distanciaStr: String = edtdistancia.text.toString()
+
             if (edtdistancia.text.toString() == "") {
                 Snackbar
                     .make(
@@ -35,14 +37,12 @@ class DistanciaActivity : AppCompatActivity() {
                     .show()
             } else {
 
-                val distancia = edtdistancia.text.toString().toFloatOrNull() ?: 0.0
+                val distancia = edtdistancia.text.toString().toFloat()
 
                 intent.putExtra(KEY_DISTANCIA_GC, distancia)
                 intent.putExtra("PriceActivity.Key_GC", price)
                 intent.putExtra("ConsumoActivity.Key_GC", consumo)
                 startActivity(intent)
-
-
 
             }
 
@@ -50,3 +50,5 @@ class DistanciaActivity : AppCompatActivity() {
 
     }
 }
+
+

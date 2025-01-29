@@ -27,8 +27,6 @@ class MainActivity : AppCompatActivity() {
 
             val intent = Intent(this, PriceActivity:: class.java)
             startActivity(intent)
-
-            println("Geo ação do botão ")
         }
 
         }
