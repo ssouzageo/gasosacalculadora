@@ -23,6 +23,9 @@ class ConsumoActivity : AppCompatActivity() {
         val buttonConsumo = findViewById<Button>(R.id.btn_consumo)
 
         buttonConsumo.setOnClickListener {
+
+            val consumoStr: String = edtconsumo.text.toString()
+
             if (edtconsumo.text.toString() == "" ) {
                 Snackbar
                     .make(

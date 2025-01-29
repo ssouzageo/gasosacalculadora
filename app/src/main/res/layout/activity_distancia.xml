@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="50dp"
-            android:src="@drawable/distância"
+            android:src="@drawable/distancia"
             tools:srcCompat="@tools:sample/avatars" />
     </LinearLayout>
 

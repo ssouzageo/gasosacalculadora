@@ -18,12 +18,13 @@ class PriceActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_price)
 
-        val price = intent.getFloatExtra(KEY_PRICE_GC, 0f)
-
         val edtprice = findViewById<TextInputEditText>(R.id.edt_price)
         val buttonPrice = findViewById<Button>(R.id.btn_price)
 
         buttonPrice.setOnClickListener {
+
+            val priceStr: String = edtprice.text.toString()
+
             if (edtprice.text.toString() == "" ) {
                 Snackbar
                     .make(
@@ -37,8 +38,9 @@ class PriceActivity : AppCompatActivity() {
 
                 intent.putExtra(KEY_PRICE_GC, price)
                 startActivity(intent)
+
+                }
             }
         }
     }
 
-            }
