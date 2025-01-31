@@ -38,6 +38,7 @@ class ConsumoActivity : AppCompatActivity() {
             } else {
                 val consumo = edtconsumo.text.toString().toFloatOrNull() ?: 0.0
 
+                val intent = Intent(this, DistanciaActivity::class.java)
                 intent.putExtra(KEY_CONSUMO_GC, consumo)
                 intent.putExtra("PriceActivity.Key_GC", price)
                 startActivity(intent)

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#00A86B"
+    android:background="#000080"
     tools:context=".PriceActivity">
 
     <LinearLayout
@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="50dp"
-            android:src="@drawable/price"
+            android:src="@drawable/bombagasosa"
             tools:srcCompat="@tools:sample/avatars" />
     </LinearLayout>
 
@@ -41,6 +41,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        app:hintEnabled="false"
+
         app:layout_constraintTop_toBottomOf="@+id/tv_passo1"
         tools:layout_editor_absoluteX="16dp">
 
@@ -48,6 +50,7 @@
             android:id="@+id/edt_price"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/bg_corners"
             android:hint="Ex: 1.70"
             android:inputType="numberDecimal" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -68,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="Preço do Combustível"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="32dp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/bgtela2"
