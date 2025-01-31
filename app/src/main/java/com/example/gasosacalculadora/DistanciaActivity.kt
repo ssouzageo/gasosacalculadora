@@ -1,5 +1,6 @@
 package com.example.gasosacalculadora
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
@@ -37,7 +38,7 @@ class DistanciaActivity : AppCompatActivity() {
                     .show()
             } else {
 
-                val distancia = edtdistancia.text.toString().toFloat()
+                val distancia = edtdistancia.text.toString().toFloatOrNull() ?: 0.0
 
                 intent.putExtra(KEY_DISTANCIA_GC, distancia)
                 intent.putExtra("PriceActivity.Key_GC", price)

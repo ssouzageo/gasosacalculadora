@@ -13,20 +13,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        
-        // 1. Adicionar imagens;
-        // 2. Consertar espaços de texto;
-        // 3. Adicionar background em telas;
-        // 4. Corrigir cor no StatusBar;
-        // 5. Arredondar cantos dos edts; e
-        // 6. Adicionar ids.
 
         val btniniciar = findViewById<Button>(R.id.btn_iniciar)
 
         btniniciar.setOnClickListener {
 
-            val intent = Intent(this, PriceActivity:: class.java)
+            val intent = Intent(this, PriceActivity::class.java)
             startActivity(intent)
+
         }
 
         }
