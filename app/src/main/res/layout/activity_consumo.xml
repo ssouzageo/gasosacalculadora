@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#00A86B"
+    android:background="#000080"
     tools:context=".ConsumoActivity">
 
     <LinearLayout
@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="50dp"
-            android:src="@drawable/consumo"
+            android:src="@drawable/bombagasosa"
             tools:srcCompat="@tools:sample/avatars" />
     </LinearLayout>
 
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="Consumo do carro"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/bgtela3"
@@ -63,6 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_passo2">
@@ -71,6 +72,7 @@
             android:id="@+id/edt_consumo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/bg_corners"
             android:hint="Ex: 5km/l" />
     </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

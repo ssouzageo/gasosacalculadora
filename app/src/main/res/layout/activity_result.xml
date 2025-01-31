@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00A86B"
+    android:background="#000080"
     tools:context=".ResultActivity">
 
     <LinearLayout
@@ -30,7 +30,8 @@
             android:maxLength="7"
             tools:text="R$ 51,0"
             android:textSize="64sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
     </LinearLayout>
 
     <Button

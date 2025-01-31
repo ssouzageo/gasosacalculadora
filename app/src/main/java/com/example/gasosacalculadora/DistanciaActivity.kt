@@ -40,6 +40,7 @@ class DistanciaActivity : AppCompatActivity() {
 
                 val distancia = edtdistancia.text.toString().toFloatOrNull() ?: 0.0
 
+                val intent = Intent(this, ResultActivity::class.java)
                 intent.putExtra(KEY_DISTANCIA_GC, distancia)
                 intent.putExtra("PriceActivity.Key_GC", price)
                 intent.putExtra("ConsumoActivity.Key_GC", consumo)

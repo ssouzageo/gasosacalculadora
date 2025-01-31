@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00A86B"
+    android:background="#000080"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -43,7 +43,7 @@
         android:layout_margin="16dp"
         android:gravity="center_horizontal"
         android:text="Calculadora para Gastos de Combustível"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="32dp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
@@ -56,7 +56,7 @@
         android:layout_margin="16dp"
         android:gravity="center_horizontal"
         android:textSize="15sp"
-        android:textColor="#FFFFF0"
+        android:textColor="@color/white"
         android:text="Não sabe quanto vai gastar com combustível na viagem? Aqui você sabe."
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_título" />
